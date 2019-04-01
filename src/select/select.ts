@@ -519,7 +519,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
       return;
     }
     if (event.keyCode === 9 || event.keyCode === 13 ||
-      event.keyCode === 27 || (event.keyCode >= 37 && event.keyCode <= 40)) {
+      event.keyCode === 27 || (event.keyCode >= 37 && event.keyCode <= 40) || event.keyCode === 16) {
       event.preventDefault();
       return;
     }
